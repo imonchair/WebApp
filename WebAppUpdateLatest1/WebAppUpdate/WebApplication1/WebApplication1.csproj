@@ -59,8 +59,14 @@
   <ItemGroup>
     <Content Include="Pages\calculator.aspx" />
     <Content Include="Pages\crypto.html" />
+    <Content Include="Pages\img\calc1.png" />
+    <Content Include="Pages\img\calc2.png" />
+    <Content Include="Pages\img\calc3.png" />
+    <Content Include="Pages\img\calc4.png" />
     <Content Include="Pages\img\code\GitHub.png" />
     <Content Include="Pages\img\code\python-jpg.png" />
+    <Content Include="Pages\img\twitt.jpg" />
+    <Content Include="Pages\img\code\vs.png" />
     <Content Include="Pages\index.html" />
     <Content Include="Pages\coding.html" />
     <Content Include="Pages\school.html" />
@@ -96,6 +102,8 @@
     <Content Include="Pages\Assignments\English\englishTerm3.docx" />
     <Content Include="Pages\Assignments\Science\scienceTerm1.docx" />
     <Content Include="Pages\code\SchoolCalc.zip" />
+    <Content Include="Pages\Assignments\Term4history.zip" />
+    <Content Include="Pages\code\Design.docx" />
     <None Include="Properties\PublishProfiles\jgif.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

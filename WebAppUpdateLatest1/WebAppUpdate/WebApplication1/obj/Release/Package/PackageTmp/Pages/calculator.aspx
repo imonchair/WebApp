@@ -72,8 +72,7 @@
                         calculator that was even worse! We heard your complaints, so we built The Better Calculator, it's available free of charge and it's compltely open source
                         download the compiled installer and source below.
                     </p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">x86 Installer</a> <a class="btn btn-primary btn-lg" href="#" role="button">Source</a></p>
-                </div>
+                    <p><a class="btn btn-primary btn-lg" href="code/SchoolCalc.zip" role="button">Source</a> </p>
 
 
                 <p>
@@ -218,40 +217,39 @@
 
 
             </div>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img/calc.jpg" alt="...">
-      <div class="carousel-caption">
-        <h1>Hello</h1>
+            <h2>Win32</h2>
+            <p>We also offer this calculator in Win32 so it runs on windows! Check out the slider for a tutorial!</p>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/calc1.png" alt="...">
+      <div class="caption">
+        <h3>It can do basic operations</h3>
+        <p>Simply press the desired number followed by the desired operation and then the second number, finish up with equals! When you are done hit C.</p>
+       
       </div>
     </div>
-    <div class="item">
-      <img src="img/calc2.png" alt="...">
-      <div class="carousel-caption">
-        <h1>Noob</h1>
-      </div>
-    </div>
-    
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
+      <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/calc1.png"" alt="...">
+      <div class="caption">
+        <h3>Did we mention trig?</h3>
+        <p>Are your equations missing trig? Simply press the desired number followed by your trig operation, select the desired operation and repeat, finish up with equals!</p>
+        
+      </div>
+    </div>
+  </div>
+      <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/calc1.png"" alt="...">
+      <div class="caption">
+        <h3>We nearly forgot log!</h3>
+        <p>The only calculator from RBHS that supports log! It works the same way as trig but press log, we also offer inverse!</p>
+        
+      </div>
+    </div>
+  </div>
 </div>
         </div>
 
