@@ -95,6 +95,7 @@
     <Content Include="Pages\Assignments\English\englishTerm1.docx" />
     <Content Include="Pages\Assignments\English\englishTerm3.docx" />
     <Content Include="Pages\Assignments\Science\scienceTerm1.docx" />
+    <Content Include="Pages\code\SchoolCalc.zip" />
     <None Include="Properties\PublishProfiles\jgif.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
