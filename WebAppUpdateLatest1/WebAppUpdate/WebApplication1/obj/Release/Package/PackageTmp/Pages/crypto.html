@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jack Gifford - Crypto</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">JackGifford</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="school.html">School Work</a></li>
+                    <li><a href="calculator.aspx">My Calculator</a></li>
+                    <li><a href="coding.html">Code</a></li>
+                    
+                    <li class="active"><a href="crypto.html">Cryptography</a></li>
+                    
+                </ul>
+                
+               
+            </div>
+            <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h1>Cryptography <small>Powered by Python!</small></h1>
+        </div>
+        <p>One of the most fun parts of programming is cyrptography, we were given an assignment to take a string of text and encyrpt it, using only python. I used a one-time pad, a modification of the Vignere Cipher which allows for virtually uncrackable ciphers. I created the key using the garbage collector in python using:</p>
+        
+        <pre>import os, random, string
+
+length = 13
+chars = string.ascii_letters
+random.seed = (os.urandom(1024))
+
+print ''.join(random.choice(chars) for i in range(length))</pre>
+<p>
+This is as random as Python gets, anything else is psuedorandom and will be repeated at some point. 
+This key is essentially a key for a vignere cipher, what makes it different is it is never used again. Repeating this key creates a pattern and its security is lost, I then wrote this script:
+</p>
+<br />
+<pre>import pyperclip
+
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+def main():
+  print 'Insert plaintext'
+  plaintext = 'cryptographyistheessentialbuildingblockofindependencefororganisationsontheInternetjustlikearmiesaretheessentialbuildingblocksofstatesbecauseotherwiseonestatejusttakesoveranother'
+  print 'Insert key'
+  key = 'voysnlegqbkzctvovqgwfqhwpoxdubszwqefxnwssxxnzijtnelyviccjsampgwywynsgmlwppmzgscshngyqkmrhiuprmjnqwgzczcexqqonkomkaeghberoseovwabqevavtotevtohwkxsnapfbbuonspxtbibnoooiusetuyoagsn'
+  operation = 'encode'
+
+  if operation == 'encode':
+    ciphertext = encrypt(key, plaintext)
+  elif operation == 'decode':
+    ciphertext == decrypt(key, plaintext)
+
+  print ('%sed message:' % (operation.title()))
+  print(ciphertext)
+  pyperclip.copy(ciphertext)
+  print()
+  print('Copied to Clip')
+
+def encrypt(key, plaintext):
+  return translate(key, plaintext, 'encode')
+
+def decrypt(key, plaintext):
+  return translate(key, plaintext, 'decode')
+
+def translate(key, plaintext, mode):
+  ciphertext = []
+
+  keyIndex = 0
+  key = key.upper()
+
+  for symbol in plaintext:
+    num = alphabet.find(symbol.upper())
+    if num != -1:
+      if mode == 'encode':
+        num += alphabet.find(key[keyIndex])
+      elif mode == 'decode':
+        num -= alphabet.find(key[keyIndex])
+
+      num %= len(alphabet)
+
+      if symbol.isupper():
+        ciphertext.append(alphabet[num])
+      elif symbol.islower():
+        ciphertext.append(alphabet[num].lower())
+
+
+      keyIndex += 1
+      if keyIndex == len(key):
+        keyIndex = 0
+
+    else:
+      ciphertext.append(symbol)
+
+    return ''.join(ciphertext)
+
+main()
+</pre>
+<br />
+<p>When you use this key:</p>
+<pre>voysnlegqbkzctvovqgwfqhwpoxdubszwqefxnwssxxnzijtnelyviccjsampgwywynsgmlwppmzgscshngyqkmrhiuprmjnqwgzczcexqqonkomkaeghberoseovwabqevavtotevtohwkxsnapfbbuonspxtbibnoooiusetuyoagsn
+</pre>
+<p>This leaves you with the final encrypted code:</p>
+<br />
+<pre>xfwhgzkxqqrxklovzuyojdaepzyxcmvhjwfqlpggxfkqdxngqiyaznqtxjgmcooypgbfyaypwtumzwtflgpsidxzrmugdunfqnksjdgwpudhvkzneipjpokszggynkftjeoenusveplsvprbjjihjpoyggsibcvaugoysainikulctnwe
+</pre>
+               
+          
+    </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="static/js/bootstrap.min.js"></script>
+        </body>
+</html>

@@ -1,0 +1,6 @@
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\bin\WebApplication1.dll.config
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\bin\WebApplication1.dll
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\bin\WebApplication1.pdb
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\obj\Release\WebApplication1.dll
+G:\Desktop\WebAppUpdateLatest1\WebAppUpdate\WebApplication1\obj\Release\WebApplication1.pdb
