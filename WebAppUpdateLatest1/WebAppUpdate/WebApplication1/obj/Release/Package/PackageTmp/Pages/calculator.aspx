@@ -222,7 +222,7 @@
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
-      <img src="img/calc1.png" alt="...">
+      <img src="img/calc4.png" alt="...">
       <div class="caption">
         <h3>It can do basic operations</h3>
         <p>Simply press the desired number followed by the desired operation and then the second number, finish up with equals! When you are done hit C.</p>
@@ -242,7 +242,7 @@
   </div>
       <div class="col-md-4">
     <div class="thumbnail">
-      <img src="img/calc1.png"" alt="...">
+      <img src="img/calc3.png"" alt="...">
       <div class="caption">
         <h3>We nearly forgot log!</h3>
         <p>The only calculator from RBHS that supports log! It works the same way as trig but press log, we also offer inverse!</p>
